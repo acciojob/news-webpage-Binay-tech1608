@@ -1,39 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic News Webpage</title>
-    <link rel="stylesheet" href="style.css">
+	 <meta charset="UTF-8">
+  <title>Shaw's News</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    .header {
+      background-color: #011e29;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+    }
+
+    /* Main layout container */
+    .container {
+      display: flex;
+      justify-content: space-around;
+      margin: 30px;
+    }
+
+    /* Latest News Section */
+    .latest-news-section {
+      background-color: white;
+      padding: 20px;
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    .latest-news-section h3 {
+      margin-top: 0;
+    }
+
+    .latest-news-section ul {
+      padding-left: 20px;
+    }
+
+    /* Main Article */
+    .main-article {
+      background-color: white;
+      padding: 20px;
+      width: 300px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    /* Pictorial News Section */
+    .pictorial-news-section {
+      background-color: white;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .pictorial-news-section img {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+  </style>
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+	 <!-- Header -->
+  <header class="header">
+    Shaw's News
+  </header>
 
-    <header class="header">
-        <h1>Shaw's News</h1>
-    </header>
+  <!-- Content -->
+  <div class="container">
 
-    <main class="container">
-        <div class="latest-news-section">
-            <h3>Latest News Articles</h3>
-            <ul>
-                <li>Article 1</li>
-                <li>Article 2</li>
-                <li>Article 3</li>
-            </ul>
-        </div>
+    <!-- Latest News -->
+    <div class="latest-news-section">
+      <h3>Latest News Articles</h3>
+      <ul>
+        <li>Article 1</li>
+        <li>Article 2</li>
+        <li>Article 3</li>
+      </ul>
+    </div>
 
-		<div class="main_article">
-			<h3>Main Article</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsum nesciunt consequatur doloremque laborum vero odit consequuntur quaerat, cupiditate obcaecati doloribus, aspernatur, aliquid ullam laboriosam minima qui? Fuga beatae, tempora eius quos corporis aut ipsam explicabo praesentium deleniti enim officiis voluptatibus tempore in expedita odio, consectetur provident vero alias! Saepe.</p>
-		</div>
+    <!-- Main Article -->
+    <div class="main-article">
+      <h2>Main Article</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed auctor magna eu fringilla malesuada.
+        Ipsum risus eleifend est, non feugiat quam augue euismod eros.
+        Sed malesuada, magna eu fringilla malesuada,
+        ipsum risus eleifend est, non feugiat quam augue euismod eros.
+      </p>
+    </div>
 
-        <div class="pictorial-news-section">
-            <h2>Pictorial News</h2>
-			    <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="Image_one">
-                <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="Image_two">
-                <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="Image_three">
-        </div>
-    </main>
+    <!-- Pictorial News -->
+    <div class="pictorial-news-section">
+      <h3>Pictorial News</h3>
+      <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="News Image 1">
+      <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="News Image 2">
+      <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="News Image 3">
+    </div>
+
+  </div>
+	<!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+</script>
 
 </body>
+
 </html>
