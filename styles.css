@@ -13,7 +13,8 @@ body {
     margin: 20px auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+	align-items: flex-start;
 }
 
 /* 1. Header Styles */
@@ -23,13 +24,17 @@ body {
     text-align: center;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 /* 2. Latest News Section */
 .latest-news-section {
-    background-color: #ffffff; /* Contrast for readability */
+    background-color: white; /* Contrast for readability */
     padding-left: 20px;
-    width: 90%;
+	display: flex;
+	flex-direction: column;
+    min-width: 20%;
+	max-height: auto;
     margin: 0 auto;
 	border-radius: 5px;
 }
@@ -40,25 +45,28 @@ body {
 }
 
 .latest-news-section li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .main_article{
+	background-color: white;
 	text-align: center;
 	justify-content: center;
-	
+	border-radius: 5px;
+	min-width: 40%;
 }
 /* 3. Pictorial News Section */
 .pictorial-news-section {
-    background-color: #ffffff;
+    background-color: white;
     padding: 30px;
-    width: 90%;
+    min-width: 30%;
     margin: 0 auto;
     text-align: center;
 	display: flex;
 	flex-direction: column;
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+	align-items: center;
 }
 
 .image-gallery {
