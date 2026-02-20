@@ -29,7 +29,7 @@ body {
 /* 2. Latest News Section */
 .latest-news-section {
     background-color: #ffffff; /* Contrast for readability */
-    padding: 20px;
+    padding-left: 20px;
     width: 90%;
     margin: 0 auto;
 	border-radius: 5px;
@@ -82,8 +82,3 @@ body {
     display: block;
 }
 
-.news-item p {
-    font-size: 0.9rem;
-    margin-top: 10px;
-    font-style: italic;
-}
